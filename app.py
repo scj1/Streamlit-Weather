@@ -2,6 +2,13 @@ import streamlit as st
 import requests
 
 st.set_page_config(page_title='Streamlit Weather', page_icon="⛅")
+st.title("🌞Streamlit Weather☁️️")
+
+with st.sidebar.expander("About"):
+         st.write( "Developed by Dinuja de Silva ")
+
+with st.sidebar.expander("Version"):
+    st.write("1.0.0")
 
 
 
@@ -16,9 +23,8 @@ headers = {
 
 response = requests.request("GET", url, headers=headers, params=querystring)
 
+q = ['Sydney', 'Colombo', 'Los Angeles', 'London', 'Rome', 'Paris']
+
+st.sidebar.selectbox('Pick a country', q )
+
 print(response.text)
-
-
-
-
-st.title("Streamlit Weather")
