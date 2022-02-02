@@ -4,11 +4,20 @@ import requests
 st.set_page_config(page_title='Streamlit Weather', page_icon="⛅")
 st.title("🌞Streamlit Weather☁️️")
 
-with st.sidebar.expander("About"):
-         st.write( "Developed by Dinuja de Silva ")
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqhImnN1KCxe8k8DDt0pCl01uqmq6yZDPm3w&usqp=CAU")
+    }
+   .sidebar .sidebar-content {
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqhImnN1KCxe8k8DDt0pCl01uqmq6yZDPm3w&usqp=CAU")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
-with st.sidebar.expander("Version"):
-    st.write("1.0.0")
 
 
 
@@ -26,5 +35,12 @@ response = requests.request("GET", url, headers=headers, params=querystring)
 q = ['Sydney', 'Colombo', 'Los Angeles', 'London', 'Rome', 'Paris']
 
 st.sidebar.selectbox('Pick a country', q )
+
+
+with st.sidebar.expander("About"):
+         st.write( "Developed by Dinuja de Silva ")
+
+with st.sidebar.expander("Version"):
+    st.write("1.0.0")
 
 print(response.text)
