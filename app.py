@@ -1,6 +1,10 @@
 import streamlit as st
 import requests
 
+st.set_page_config(page_title='Streamlit Weather', page_icon="⛅")
+
+
+
 url = "https://community-open-weather-map.p.rapidapi.com/weather"
 
 querystring = {"q":"London,uk","lat":"0","lon":"0","callback":"test","id":"2172797","lang":"null","units":"imperial","mode":"xml"}
