@@ -8,10 +8,10 @@ st.markdown(
     """
     <style>
     .reportview-container {
-        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqhImnN1KCxe8k8DDt0pCl01uqmq6yZDPm3w&usqp=CAU")
+        background: url("https://www.gettyimages.com/detail/photo/out-of-the-blue-royalty-free-image/840890706")
     }
    .sidebar .sidebar-content {
-        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqhImnN1KCxe8k8DDt0pCl01uqmq6yZDPm3w&usqp=CAU")
+        background: url("https://www.gettyimages.com/detail/photo/out-of-the-blue-royalty-free-image/840890706")
     }
     </style>
     """,
