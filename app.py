@@ -1,2 +1,2 @@
 import streamlit as st
-st.info("Yo!")
+st.title("Streamlit Weather")
