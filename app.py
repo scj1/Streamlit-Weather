@@ -1,5 +1,5 @@
 import streamlit as st
-import requests
+
 
 st.set_page_config(page_title='Streamlit Weather', page_icon="⛅")
 st.title("🌞Streamlit Weather☁️️")
@@ -28,5 +28,3 @@ with st.sidebar.expander("About"):
 
 with st.sidebar.expander("Version"):
     st.write("1.0.0")
-
-print(response.text)
