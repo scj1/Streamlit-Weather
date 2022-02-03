@@ -20,7 +20,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 
-st.sidebar.selectbox('Pick a country', q )
+
 
 
 with st.sidebar.expander("About"):
