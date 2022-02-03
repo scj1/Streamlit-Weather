@@ -4,19 +4,16 @@ import requests
 st.set_page_config(page_title='Streamlit Weather', page_icon="⛅")
 st.title("🌞Streamlit Weather☁️️")
 
-st.markdown(
-    """
-    <style>
-    .reportview-container {
-        background: url("https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260")
-    }
-   .sidebar .sidebar-content {
-        background: url("https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260")
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+background-size: cover;
+}
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 
